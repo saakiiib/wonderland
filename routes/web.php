@@ -6,6 +6,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\StudentFeedbackController;
+use App\Http\Controllers\VehicleController;
 
 Route::get('/', function () { return view('welcome'); });
 
@@ -25,9 +26,7 @@ Route::post('/store-teacher', [TeacherController::class, 'storeTeacher']);
 Route::get('/manage-teachers', [TeacherController::class, 'manageTeachers'])->name('manage-teachers');
 Route::get('/teachers/{teacher}/edit', [TeacherController::class, 'editTeacher'])->name('teachers.edit');
 Route::put('/teachers/{teacher}', [TeacherController::class, 'updateTeacher'])->name('teachers.update');
-
 Route::delete('/teachers/{teacher}', [TeacherController::class, 'deleteTeacher'])->name('teachers.delete');
-
 
 Route::get('/add-student', [StudentController::class, 'addStudent']);
 Route::post('/store-student', [StudentController::class, 'storeStudent']);
@@ -36,7 +35,6 @@ Route::get('/students/{student}/edit', [StudentController::class, 'editStudent']
 Route::put('/students/{student}', [StudentController::class, 'updateStudent'])->name('students.update');
 Route::delete('/students/{student}', [StudentController::class, 'deleteStudent'])->name('students.delete');
 
-
 Route::get('/add-student-feedback', [StudentFeedbackController::class, 'addStudentFeedback']);
 Route::post('/store-student-feedback', [StudentFeedbackController::class, 'storeStudentFeedback'])->name('store-student-feedback');
 Route::get('/manage-student-feedbacks', [StudentFeedbackController::class, 'manageStudentFeedback'])->name('manage-student-feedbacks');
@@ -44,8 +42,9 @@ Route::get('/student-feedback/{feedback}/edit', [StudentFeedbackController::clas
 Route::put('/student-feedback/{feedback}', [StudentFeedbackController::class, 'updateStudentFeedback'])->name('student-feedback.update');
 Route::delete('/student-feedback/{feedback}', [StudentFeedbackController::class, 'deleteStudentFeedback'])->name('student-feedback.delete');
 
-
-Route::get('/add-vehicle', [DashboardController::class, 'addVehicle']);
-Route::get('/manage-vehicles', [DashboardController::class, 'manageVehicles']);
-Route::get('/add-feedback', [DashboardController::class, 'addFeedback']);
-Route::get('/manage-feedbacks', [DashboardController::class, 'manageFeedbacks']);
+Route::get('/add-vehicle', [VehicleController::class, 'addVehicle'])->name('add-vehicle');
+Route::post('/store-vehicle', [VehicleController::class, 'storeVehicle'])->name('store-vehicle');
+Route::get('/manage-vehicles', [VehicleController::class, 'manageVehicles'])->name('manage-vehicles');
+Route::get('/edit-vehicle/{id}', [VehicleController::class, 'editVehicle'])->name('edit-vehicle');
+Route::put('/update-vehicle/{id}', [VehicleController::class, 'updateVehicle'])->name('update-vehicle');
+Route::delete('/delete-vehicle/{id}', [VehicleController::class, 'deleteVehicle'])->name('delete-vehicle');

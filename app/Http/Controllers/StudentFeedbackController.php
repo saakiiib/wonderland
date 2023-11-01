@@ -7,14 +7,15 @@ use Illuminate\Support\Facades\DB;
 
 class StudentFeedbackController extends Controller
 {
+    public function addStudentFeedback() {
+        return view('feedback.add_student_feedback');
+    }
+
     public function manageStudentFeedback() {
         $feedback = DB::table('student_feedbacks')->get();
         return view('feedback.manage_student_feedbacks', compact('feedback'));
     }
 
-    public function addStudentFeedback() {
-        return view('feedback.add_student_feedback');
-    }
 
     public function storeStudentFeedback(Request $request) {
         $validatedData = $request->validate([
