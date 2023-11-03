@@ -2,12 +2,18 @@
 <html>
 
 <head>
+
     <!-- Basic -->
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <!-- Mobile Metas -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- Site Metas -->
+
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -15,31 +21,40 @@
     <title>Wonderland</title>
 
 
-
     <!-- bootstrap core css -->
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
     <!-- progress barstle -->
-    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
+
     <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+
     <!-- font wesome stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+
     <!-- Custom styles for this template -->
+
     <link href="css/style.css" rel="stylesheet" />
+
     <!-- responsive style -->
+
     <link href="css/responsive.css" rel="stylesheet" />
 
-
-
-
-    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css" />
 
 
 </head>
 
 <body>
     <div class="top_container">
+
         <!-- header section strats -->
+
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -80,7 +95,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ URL::to('/admin-login') }}">Admin Login</a>
                                 </li>
-
                             </ul>
                         </div>
                 </nav>
@@ -91,7 +105,6 @@
                 <div class="hero_detail-box">
                     <h3>
                         Welcome to <br>
-
                     </h3>
                     <h1>
                         Wonderland
@@ -102,12 +115,6 @@
                         lifelong learning.
                     </p>
                     <div class="hero_btn-continer">
-                        {{-- <a href="" class="call_to-btn btn_white-border">
-                            <span>
-                                Contact
-                            </span>
-                            <img src="images/right-arrow.png" alt="">
-                        </a> --}}
                     </div>
                 </div>
                 <div class="hero_img-container">
@@ -118,9 +125,11 @@
             </div>
         </section>
     </div>
+
     <!-- end header section -->
 
     <!-- about section -->
+
     <section class="about_section layout_padding">
         <div class="container">
             <h2 class="main-heading ">
@@ -136,7 +145,6 @@
             </div>
             <div class="d-flex justify-content-center mt-5">
                 <a href="" class="call_to-btn  ">
-
                     <span>
                         Read More
                     </span>
@@ -146,10 +154,10 @@
         </div>
     </section>
 
-
     <!-- about section -->
 
     <!-- teacher section -->
+
     <section class="teacher_section layout_padding-bottom">
         <div class="container">
             <h2 class="main-heading ">
@@ -171,32 +179,23 @@
                         <div class="card-body">
                             <h5 class="card-title">Leena jorj</h5>
                         </div>
-
                     </div>
                     <div class="card">
                         <img class="card-img-top" src="images/teacher-3.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Magi Den</h5>
-
                         </div>
-
                     </div>
-
                     <div class="card">
                         <img class="card-img-top" src="images/teacher-4.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">jonson mark</h5>
-
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
             <div class="d-flex justify-content-center mt-3">
                 <a href="" class="call_to-btn  ">
-
                     <span>
                         See More
                     </span>
@@ -209,6 +208,7 @@
     <!-- teacher section -->
 
     <!-- vehicle section -->
+
     <section class="vehicle_section layout_padding">
         <div class="container">
             <h2 class="main-heading ">
@@ -248,13 +248,13 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </section>
 
-
     <!-- vehicle section -->
+
     <!-- client section -->
+
     <section class="client_section layout_padding">
         <div class="container">
             <h2 class="main-heading ">
@@ -292,8 +292,6 @@
                             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit
                             anim id est laborum."
-
-
                         </p>
                     </div>
                 </div>
@@ -301,23 +299,17 @@
         </div>
     </section>
 
-
-
-
     <!-- client section -->
 
     <!-- contact section -->
 
     <section class="contact_section layout_padding-bottom">
         <div class="container">
-
             <h2 class="main-heading">
                 Contact Now
-
             </h2>
             <p class="text-center">
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-
             </p>
             <div class="">
                 <div class="contact_section-container">
@@ -348,14 +340,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
 
     <!-- end contact section -->
 
     <!-- admission section -->
+
     <section class="admission_section ">
         <div class="container-fluid position-relative">
             <div class="row h-100">
@@ -378,7 +369,6 @@
                                     Read More
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -386,78 +376,42 @@
         </div>
     </section>
 
-
-
-
-
-
     <!-- admission section -->
 
-
     <!-- landing section -->
+
     <section class="landing_section layout_padding">
         <div class="container">
             <h2 class="main-heading">
                 Free Multipurpose Responsive
-
             </h2>
             <h2 class="main-heading number_heading">
                 Landing Page 2019
-
             </h2>
             <p class="landing_detail text-center">
                 There are many variations of passages of Lorem Ipsum available, but the majority There are many
                 variations of
                 passages of Lorem Ipsum available, but the majority h
-
             </p>
         </div>
     </section>
 
     <!-- end landing section -->
 
-
-
-
     <!-- footer section -->
+
     <section class="container-fluid footer_section">
         <p>
             Copyright &copy; 2019 All Rights Reserved By
             <a href="https://html.design/">Free Html Templates</a>
         </p>
     </section>
+
     <!-- footer section -->
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script>
-        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-      });
-
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
-    </script>
-    <!-- google map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-    </script>
-    <!-- end google map js -->
 </body>
 
 </html>

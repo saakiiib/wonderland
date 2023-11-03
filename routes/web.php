@@ -5,12 +5,16 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StudentFeedbackController;
 use App\Http\Controllers\VehicleController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [HomeController::class, 'root']);
+
 
 Route::get('/admin-register', [AdminController::class, 'adminRegister']);
 Route::get('/admin-login', [AdminController::class, 'adminLogin']);
