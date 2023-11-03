@@ -109,6 +109,13 @@
                                 <h2 class="card-title fw-bold mb-1">
                                     Log In
                                 </h2>
+
+                                @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                                @endif
+
                                 <p class="card-text mb-2">
                                     <?php
                                 $message = Session::get('message');
