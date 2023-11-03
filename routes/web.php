@@ -1,19 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\StudentFeedbackController;
 use App\Http\Controllers\VehicleController;
+use App\Http\Controllers\FrontEndController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\StudentFeedbackController;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/', [HomeController::class, 'root']);
+Route::get('/', [FrontEndController::class, 'root']);
+Route::get('/home', [FrontEndController::class, 'root']);
+Route::get('/about', [FrontEndController::class, 'about']);
+Route::get('/teachers', [FrontEndController::class, 'teachers']);
+Route::get('/vehicles', [FrontEndController::class, 'vehicles']);
+Route::get('/contact-us', [FrontEndController::class, 'contactUs']);
+Route::get('/students-feedback', [FrontEndController::class, 'studentsFeedback']);
 
 
 Route::get('/admin-register', [AdminController::class, 'adminRegister']);
