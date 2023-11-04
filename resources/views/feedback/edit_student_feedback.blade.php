@@ -14,7 +14,7 @@
         <div class="card">
             <div class card-body="">
                 <form class="needs-validation" novalidate method="POST"
-                    action="{{ route('student-feedback.update', $feedback->id) }}">
+                    action="{{ route('student-feedbacks.update', $feedback->id) }}">
                     @csrf
                     @method('PUT')
                     <div class="mb-1">

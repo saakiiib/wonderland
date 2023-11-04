@@ -13,7 +13,7 @@
     <div class="row">
         <div class="card">
             <div class="card-body">
-                <form class="needs-validation" novalidate method="POST" action="{{ route('store-student-feedback') }}">
+                <form class="needs-validation" novalidate method="POST" action="{{ route('store-student.feedback') }}">
                     @csrf
                     <div class="mb-1">
                         <label class="form-label" for="basic-addon-name">Student Name</label>

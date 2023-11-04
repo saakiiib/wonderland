@@ -30,9 +30,17 @@
             About School
         </h2>
         <p class="text-center">
-            "Welcome to Wonderland Primary School, where we nurture young minds with care and creativity, fostering
-            a love for
-            lifelong learning."
+            Welcome to Wonderland Preschool, a place where young minds embark on exciting journeys of discovery. At
+            Wonderland, we
+            believe that the early years are a time of endless wonder and boundless imagination. Our dedicated educators
+            foster
+            creativity, social development, and a love for learning through innovative teaching methods. With a strong
+            emphasis on
+            safety and a stimulating environment, we ensure that every child experiences the joy of early education.
+            Join us at
+            Wonderland Preschool, where children shine, laugh, and grow every day, exploring a world filled with wonder
+            and endless
+            possibilities.
         </p>
         <div class="about_img-box">
             <img src="{{ URL::to('images/kids.jpg') }}" alt="" class="img-fluid w-100">

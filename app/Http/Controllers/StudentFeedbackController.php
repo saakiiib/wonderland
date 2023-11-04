@@ -53,7 +53,7 @@ class StudentFeedbackController extends Controller
             'feedback_description' => $validatedData['feedback_description'],
         ]);
 
-        return redirect()->route('manage-student-feedbacks')->with('success', 'Student Feedback updated successfully');
+        return redirect()->route('manage-student.feedbacks')->with('success', 'Student Feedback updated successfully');
     }
 
     public function deleteStudentFeedback($feedback)
@@ -61,6 +61,6 @@ class StudentFeedbackController extends Controller
         $feedback = DB::table('student_feedbacks')->where('id', $feedback)->first();
         DB::table('student_feedbacks')->where('id', $feedback->id)->delete();
 
-        return redirect()->route('manage-student-feedbacks')->with('success', 'Student Feedback deleted successfully');
+        return redirect()->route('manage-student.feedbacks')->with('success', 'Student Feedback deleted successfully');
     }
 }

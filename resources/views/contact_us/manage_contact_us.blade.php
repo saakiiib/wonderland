@@ -45,7 +45,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-link"
-                                        onclick="return confirm('Are you sure you want to delete this contact?')">Delete</button>
+                                        onclick="return confirm('Do you really want to delete?')">Delete</button>
                                 </form>
                             </td>
                         </tr>

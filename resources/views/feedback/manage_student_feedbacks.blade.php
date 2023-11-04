@@ -31,11 +31,12 @@
                             <td class="text-center">{{ $item->student_name }}</td>
                             <td class="text-center">{{ $item->feedback_description }}</td>
                             <td class="text-center">
-                                <a href="{{ route('student-feedback.edit', $item->id) }}" class="btn btn-link">Edit</a>
-                                <form method="POST" action="{{ route('student-feedback.delete', $item->id) }}">
+                                <a href="{{ route('student-feedbacks.edit', $item->id) }}" class="btn btn-link">Edit</a>
+                                <form method="POST" action="{{ route('student-feedbacks.delete', $item->id) }}">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-link">Delete</button>
+                                    <button type="submit" class="btn btn-link"
+                                        onclick="return confirm('Do you really want to delete?')">Delete</button>
                                 </form>
                             </td>
                         </tr>

@@ -51,11 +51,11 @@ Route::delete('/students/{student}', [StudentController::class, 'deleteStudent']
 
 
 Route::get('/add-student-feedback', [StudentFeedbackController::class, 'addStudentFeedback']);
-Route::post('/store-student-feedback', [StudentFeedbackController::class, 'storeStudentFeedback'])->name('store-student-feedback');
-Route::get('/manage-student-feedbacks', [StudentFeedbackController::class, 'manageStudentFeedback'])->name('manage-student-feedbacks');
-Route::get('/student-feedback/{feedback}/edit', [StudentFeedbackController::class, 'editStudentFeedback'])->name('student-feedback.edit');
-Route::put('/student-feedback/{feedback}', [StudentFeedbackController::class, 'updateStudentFeedback'])->name('student-feedback.update');
-Route::delete('/student-feedback/{feedback}', [StudentFeedbackController::class, 'deleteStudentFeedback'])->name('student-feedback.delete');
+Route::post('/store-student-feedback', [StudentFeedbackController::class, 'storeStudentFeedback'])->name('store-student.feedback');
+Route::get('/manage-student-feedbacks', [StudentFeedbackController::class, 'manageStudentFeedback'])->name('manage-student.feedbacks');
+Route::get('/student-feedbacks/{feedback}/edit', [StudentFeedbackController::class, 'editStudentFeedback'])->name('student-feedbacks.edit');
+Route::put('/student-feedbacks/{feedback}', [StudentFeedbackController::class, 'updateStudentFeedback'])->name('student-feedbacks.update');
+Route::delete('/student-feedbacks/{feedback}', [StudentFeedbackController::class, 'deleteStudentFeedback'])->name('student-feedbacks.delete');
 
 
 Route::get('/add-vehicle', [VehicleController::class, 'addVehicle'])->name('add-vehicle');

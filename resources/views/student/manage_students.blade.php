@@ -40,7 +40,8 @@
                                 <form method="POST" action="{{ route('students.delete', $student->id) }}">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-link">Delete</button>
+                                    <button type="submit" class="btn btn-link"
+                                        onclick="return confirm('Do you really want to delete?')">Delete</button>
                                 </form>
                             </td>
                         </tr>
