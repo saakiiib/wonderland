@@ -36,14 +36,14 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center mt-3">
+        {{-- <div class="d-flex justify-content-center mt-3">
             <a href="{{ URL::to('your-see-more-page.html') }}" class="call_to-btn">
                 <span>
                     See More
                 </span>
                 <img src="{{ URL::to('images/right-arrow.png') }}" alt="">
             </a>
-        </div>
+        </div> --}}
     </div>
 </section>
 @endsection
