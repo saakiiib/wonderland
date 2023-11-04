@@ -91,32 +91,6 @@
             </div>
         </header>
     </div>
-    <div>
-        <section class="hero_section ">
-            <div class="hero-container container">
-                <div class="hero_detail-box">
-                    <h3>
-                        Welcome to <br>
-                    </h3>
-                    <h1>
-                        Wonderland
-                    </h1>
-                    <p>
-                        Where we nurture young minds with care and creativity,
-                        fostering a love for
-                        lifelong learning.
-                    </p>
-                    <div class="hero_btn-continer">
-                    </div>
-                </div>
-                <div class="hero_img-container">
-                    <div>
-                        <img src="{{ URL::to('images/hero.png') }}" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
 
     <!-- end header section -->
 
