@@ -1,8 +1,7 @@
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+}
 
 @media (max-width: 992px) {
-
-
     .top_container {
         height: auto;
     }
@@ -16,9 +15,7 @@
     }
 
     .client_box-container {
-
         width: 90%;
-
     }
 
     .service_detail-container {
@@ -40,13 +37,14 @@
 
     .top_container::before {
         width: 200%;
-
     }
 
-    .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
+    .custom_nav-container.navbar-expand-lg
+        .navbar-nav
+        .nav-item.active
+        .nav-link,
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-
-        color: #fff;
+        color: #082465;
     }
 
     .custom_nav-container .nav_search-btn {
@@ -67,7 +65,7 @@
     }
 
     .admission_img-box {
-        border-radius: 25px 25px 0 0
+        border-radius: 25px 25px 0 0;
     }
 
     .admission_detail {
@@ -76,14 +74,9 @@
 }
 
 @media (max-width: 768px) {
-
-
     .hero_detail-box {
         text-align: center;
     }
-
-
-
 }
 
 @media (max-width: 576px) {
@@ -119,13 +112,10 @@
 
 @media (max-width: 480px) {
     .vehicle_img-box {
-
         width: 100%;
-
     }
 
     .admission_container {
-
         width: 300px;
     }
 
@@ -134,17 +124,13 @@
     }
 
     .client_detail {
-
         flex-direction: column;
-
     }
 
     .client_detail-box {
-
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .client_detail .client_img-box {
@@ -152,16 +138,16 @@
         margin-right: 0px;
         margin-bottom: 15px;
     }
-
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+}
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+}
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
     }
-
 }
