@@ -117,13 +117,13 @@
                                     <div class="mb-1">
                                         <label class="form-label" for="register-username">Admin Name</label>
                                         <input class="form-control" id="register-username" type="text" name="admin_name"
-                                            required pattern="[A-Za-z]+" placeholder="johndoe"
+                                            required pattern="[A-Za-z]+" placeholder="Admin"
                                             aria-describedby="register-username" autofocus tabindex="1" />
                                     </div>
                                     <div class="mb-1">
                                         <label class="form-label" for="register-email">Email</label>
                                         <input class="form-control" id="register-email" type="email"
-                                            name="email_address" placeholder="john@example.com"
+                                            name="email_address" placeholder="admin@example.com"
                                             aria-describedby="register-email" tabindex="2" required />
                                     </div>
                                     <div class="mb-1">

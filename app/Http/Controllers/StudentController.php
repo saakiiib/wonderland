@@ -7,21 +7,22 @@ use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
-    public function addStudent(){
+    public function addStudent()
+    {
 
-            return view('student.add_student');
-
+        return view('student.add_student');
     }
 
-    public function manageStudents(){
+    public function manageStudents()
+    {
 
         $students = DB::table('students')->get();
 
         return view('student.manage_students', compact('students'));
-
     }
 
-    public function storeStudent(Request $request){
+    public function storeStudent(Request $request)
+    {
 
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
@@ -43,12 +44,14 @@ class StudentController extends Controller
     }
 
 
-    public function editStudent($student) {
+    public function editStudent($student)
+    {
         $student = DB::table('students')->where('id', $student)->first();
         return view('student.edit_student', ['student' => $student]);
     }
 
-    public function updateStudent(Request $request, $student) {
+    public function updateStudent(Request $request, $student)
+    {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
@@ -66,16 +69,13 @@ class StudentController extends Controller
         return redirect('/manage-students')->with('success', 'Student updated successfully');
     }
 
-
-
-    public function deleteStudent($student) {
+    public function deleteStudent($student)
+    {
 
         $student = DB::table('students')->where('id', $student)->first();
 
         DB::table('students')->where('id', $student->id)->delete();
 
         return redirect()->route('manage-students')->with('success', 'Student deleted successfully');
-
     }
-
 }

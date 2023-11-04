@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
-
     public function adminRegister()
     {
         return view('admin.admin_register');
@@ -17,6 +16,7 @@ class AdminController extends Controller
     {
         return view('admin.admin_login');
     }
+
     public function saveAdminUser(Request $request)
     {
         $data['admin_name'] = $request->admin_name;
@@ -28,6 +28,7 @@ class AdminController extends Controller
 
         return redirect('/admin-login');
     }
+
     public function adminLoginCheck(Request $request)
     {
         $email_address = $request->email_address;
@@ -48,6 +49,7 @@ class AdminController extends Controller
             return redirect('admin-login');
         }
     }
+
     public function adminDashboard()
     {
         $session_id = Session::get('admin_name');
@@ -57,6 +59,7 @@ class AdminController extends Controller
             return redirect('/admin-login');
         }
     }
+
     public function adminLogout()
     {
         Session::put('admin_name', '');

@@ -137,7 +137,7 @@
                                     <div class="mb-1">
                                         <label class="form-label" for="register-email">Email</label>
                                         <input class="form-control" id="register-email" type="email"
-                                            name="email_address" placeholder="john@example.com"
+                                            name="email_address" placeholder="admin@example.com"
                                             aria-describedby="register-email" tabindex="2" required />
                                         @csrf
                                     </div>

@@ -15,18 +15,22 @@ class FrontEndController extends Controller
     {
         return view('front_end.about');
     }
+
     public function teachers()
     {
         return view('front_end.teachers');
     }
+
     public function vehicles()
     {
         return view('front_end.vehicles');
     }
+
     public function contactUs()
     {
         return view('front_end.contact_us');
     }
+
     public function studentsFeedback()
     {
         return view('front_end.students_feedback');

@@ -7,17 +7,19 @@ use Illuminate\Support\Facades\DB;
 
 class StudentFeedbackController extends Controller
 {
-    public function addStudentFeedback() {
+    public function addStudentFeedback()
+    {
         return view('feedback.add_student_feedback');
     }
 
-    public function manageStudentFeedback() {
+    public function manageStudentFeedback()
+    {
         $feedback = DB::table('student_feedbacks')->get();
         return view('feedback.manage_student_feedbacks', compact('feedback'));
     }
 
-
-    public function storeStudentFeedback(Request $request) {
+    public function storeStudentFeedback(Request $request)
+    {
         $validatedData = $request->validate([
             'student_name' => 'required|string|max:255',
             'feedback_description' => 'required|string',
@@ -33,12 +35,14 @@ class StudentFeedbackController extends Controller
         return back()->with('success', 'Student Feedback added successfully');
     }
 
-    public function editStudentFeedback($feedback) {
+    public function editStudentFeedback($feedback)
+    {
         $feedback = DB::table('student_feedbacks')->where('id', $feedback)->first();
         return view('feedback.edit_student_feedback', ['feedback' => $feedback]);
     }
 
-    public function updateStudentFeedback(Request $request, $feedback) {
+    public function updateStudentFeedback(Request $request, $feedback)
+    {
         $validatedData = $request->validate([
             'student_name' => 'required|string|max:255',
             'feedback_description' => 'required|string',
@@ -52,7 +56,8 @@ class StudentFeedbackController extends Controller
         return redirect()->route('manage-student-feedbacks')->with('success', 'Student Feedback updated successfully');
     }
 
-    public function deleteStudentFeedback($feedback) {
+    public function deleteStudentFeedback($feedback)
+    {
         $feedback = DB::table('student_feedbacks')->where('id', $feedback)->first();
         DB::table('student_feedbacks')->where('id', $feedback->id)->delete();
 

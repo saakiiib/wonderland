@@ -16,14 +16,14 @@
                     @csrf
                     <div class="mb-1">
                         <label class="form-label" for="basic-addon-name">Name</label>
-                        <input type="text" id="basic-addon-name" name="name" class="form-control" placeholder="Name"
+                        <input type="text" id="basic-addon-name" name="name" class="form-control" placeholder="Teacher"
                             aria-label="Name" aria-describedby="basic-addon-name" required />
                         <div class="valid-feedback">Looks good!</div>
                     </div>
                     <div class="mb-1">
                         <label class="form-label" for="basic-default-email1">Email</label>
                         <input type="email" id="basic-default-email1" name="email" class="form-control"
-                            placeholder="john.doe@email.com" aria-label="john.doe@email.com" required />
+                            placeholder="teacher@example.com" aria-label="teacher@example.com" required />
                         <div class="valid-feedback">Looks good!</div>
                     </div>
                     <div class="mb-1">
