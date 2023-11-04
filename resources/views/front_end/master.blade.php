@@ -77,11 +77,13 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ URL::to('/contact-us') }}">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="{{ URL::to('/students-feedback') }}">Students Feedback</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ URL::to('/contact-us') }}">Contact Us</a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ URL::to('/admin-login') }}">Admin Login</a>
                                 </li>

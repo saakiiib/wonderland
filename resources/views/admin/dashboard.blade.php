@@ -224,6 +224,14 @@
                     </li>
                 </ul>
             </li>
+            <li class=" nav-item"><a class="d-flex align-items-center"><span class="menu-title text-truncate">Contact
+                        Us</span></a>
+                <ul class="menu-content">
+                    <li><a class="d-flex align-items-center" href="{{ URL::to('/manage-contacts') }}"><i></i><span
+                                class="menu-item text-truncate" data-i18n="List">Manage Contact Us</span></a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

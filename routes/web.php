@@ -13,6 +13,7 @@ use App\Http\Controllers\StudentFeedbackController;
 
 Route::get('/', [FrontEndController::class, 'root']);
 Route::get('/home', [FrontEndController::class, 'root']);
+Route::post('/home', [DashboardController::class, 'storeContactData'])->name('store-contact-data');
 Route::get('/about', [FrontEndController::class, 'about']);
 Route::get('/teachers', [FrontEndController::class, 'teachers']);
 Route::get('/vehicles', [FrontEndController::class, 'vehicles']);
@@ -63,3 +64,6 @@ Route::get('/manage-vehicles', [VehicleController::class, 'manageVehicles'])->na
 Route::get('/edit-vehicle/{id}', [VehicleController::class, 'editVehicle'])->name('edit-vehicle');
 Route::put('/update-vehicle/{id}', [VehicleController::class, 'updateVehicle'])->name('update-vehicle');
 Route::delete('/delete-vehicle/{id}', [VehicleController::class, 'deleteVehicle'])->name('delete-vehicle');
+
+Route::get('/manage-contacts', [DashboardController::class, 'manageContacts'])->name('manage-contacts');
+Route::delete('/delete-contact/{contact}', [DashboardController::class, 'deleteContact'])->name('delete-contact');
