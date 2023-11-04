@@ -37,14 +37,14 @@
         <div class="about_img-box">
             <img src="{{ URL::to('images/kids.jpg') }}" alt="" class="img-fluid w-100">
         </div>
-        <div class="d-flex justify-content-center mt-5">
+        {{-- <div class="d-flex justify-content-center mt-5">
             <a href="{{ URL::to('about.html') }}" class="call_to-btn">
                 <span>
                     Read More
                 </span>
                 <img src="{{ URL::to('images/right-arrow.png') }}" alt="">
             </a>
-        </div>
+        </div> --}}
     </div>
 </section>
 
@@ -88,14 +88,14 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center mt-3">
+        {{-- <div class="d-flex justify-content-center mt-3">
             <a href="{{ URL::to('your-see-more-page.html') }}" class="call_to-btn">
                 <span>
                     See More
                 </span>
                 <img src="{{ URL::to('images/right-arrow.png') }}" alt="">
             </a>
-        </div>
+        </div> --}}
     </div>
 </section>
 
@@ -132,14 +132,14 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                {{-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                </a> --}}
+                {{-- <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" ariahidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+                </a> --}}
             </div>
         </div>
     </div>
