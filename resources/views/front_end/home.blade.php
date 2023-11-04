@@ -5,15 +5,13 @@
         <div class="hero-container container">
             <div class="hero_detail-box">
                 <h3>
-                    Welcome to <br>
+                    {{ $homeData->title }}
                 </h3>
                 <h1>
                     Wonderland
                 </h1>
                 <p>
-                    Where we nurture young minds with care and creativity,
-                    fostering a love for
-                    lifelong learning.
+                    {{ $homeData->description }}
                 </p>
                 <div class="hero_btn-continer">
                 </div>
@@ -27,20 +25,10 @@
     </div>
     <div class="container">
         <h2 class="main-heading">
-            About School
+            {{ $aboutData->title }}
         </h2>
         <p class="text-center">
-            Welcome to Wonderland Preschool, a place where young minds embark on exciting journeys of discovery. At
-            Wonderland, we
-            believe that the early years are a time of endless wonder and boundless imagination. Our dedicated educators
-            foster
-            creativity, social development, and a love for learning through innovative teaching methods. With a strong
-            emphasis on
-            safety and a stimulating environment, we ensure that every child experiences the joy of early education.
-            Join us at
-            Wonderland Preschool, where children shine, laugh, and grow every day, exploring a world filled with wonder
-            and endless
-            possibilities.
+            {{ $aboutData->description }}
         </p>
         <div class="about_img-box">
             <img src="{{ URL::to('images/kids.jpg') }}" alt="" class="img-fluid w-100">
@@ -63,14 +51,22 @@
 <section class="teacher_section layout_padding-bottom">
     <div class="container">
         <h2 class="main-heading">
-            Our Teachers
+            Meet Our Dedicated Teachers
         </h2>
-        <p class="text-center">
-            Ipsum available, but the majority h
-        </p>
         <div class="teacher_container layout_padding2">
             <div class="card-deck">
                 <div class="card">
+                    <div class="card-body">
+                        @foreach($teachers as $teacher)
+                        <h2 class="card-title">{{ $teacher->name }}</h2>
+                        <p class="card-title">Email: {{ $teacher->email }}</p>
+                        <p class="card-title">Mobile Number: {{ $teacher->mobile_number }}</p>
+                        <p class="card-title">Class: {{ $teacher->class_id }}</p>
+                        <br>
+                        @endforeach
+                    </div>
+                </div>
+                {{-- <div class="card">
                     <img class="card-img-top" src="{{ URL::to('images/teacher-1.jpg') }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Den Mark</h5>
@@ -93,7 +89,7 @@
                     <div class="card-body">
                         <h5 class="card-title">jonson mark</h5>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
         {{-- <div class="d-flex justify-content-center mt-3">
@@ -112,42 +108,29 @@
 <!-- vehicle section -->
 
 <section class="vehicle_section layout_padding">
-    <div class="container">
-        <h2 class="main-heading">
-            Vehicles Facility
-        </h2>
+    <div class="container text-center">
+        <h2 class="main-heading">Vehicles Facility</h2>
         <p class="text-center">
             There are many variations of passages of Lorem Ipsum available, but the majority hThere are many
-            variations of
-            passages of Lorem Ipsum available, but the majority h
+            variations of passages of Lorem Ipsum available, but the majority h
         </p>
         <div class="layout_padding-top">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="vehicle_img-box">
-                            <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="vehicle_img-box">
-                            <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="vehicle_img-box">
+                        <div class="vehicle_img-box mx-auto">
                             <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
                         </div>
                     </div>
                 </div>
-                {{-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a> --}}
-                {{-- <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" ariahidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a> --}}
+            </div>
+            <div class="container card-deck">
+                @foreach ($vehicles as $vehicle)
+                <div class="card-body">
+                    <h3 class="card-title">{{ $vehicle->vehicle_type }}</h3>
+                    <p class="card-text">{{ $vehicle->vehicle_number }}</p>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>
@@ -163,39 +146,29 @@
             Our Students Feedback
         </h2>
         <p class="text-center">
-            There are many variations of passages of Lorem Ipsum available, but the majority hThere are many
-            variations of
-            passages of Lorem Ipsum available, but the majority h
+            Your thoughts, our inspiration. Students' feedback helps us enhance the learning journey, making education
+            more tailored
+            to your needs. Share, shape, and excel with us.
         </p>
         <div class="layout_padding2">
             <div class="client_container d-flex flex-column">
+                @foreach ($feedbacks as $feedback)
                 <div class="client_detail d-flex align-items-center">
                     <div class="client_img-box">
                         <img src="{{ URL::to('images/student.png') }}" alt="">
                     </div>
                     <div class="client_detail-box">
                         <h4>
-                            Veniam Quis
+                            {{ $feedback->student_name }}
                         </h4>
-                        <span>
-                            (exercitation)
-                        </span>
                     </div>
                 </div>
                 <div class="client_text mt-4">
                     <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit
-                        anim id est laborum."
+                        {{ $feedback->feedback_description }}
                     </p>
                 </div>
+                @endforeach
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
@@ -14,6 +15,8 @@ use App\Http\Controllers\StudentFeedbackController;
 Route::get('/', [FrontEndController::class, 'root']);
 Route::get('/home', [FrontEndController::class, 'root']);
 Route::post('/home', [DashboardController::class, 'storeContactData'])->name('store-contact-data');
+
+
 Route::get('/about', [FrontEndController::class, 'about']);
 Route::get('/teachers', [FrontEndController::class, 'teachers']);
 Route::get('/vehicles', [FrontEndController::class, 'vehicles']);
@@ -30,8 +33,12 @@ Route::get('/admin-logout', [AdminController::class, 'adminLogout']);
 Route::get('/admin-profile', [AdminController::class, 'adminProfile']);
 
 
-Route::get('/edit-home', [DashboardController::class, 'editHome']);
-Route::get('/edit-about', [DashboardController::class, 'editAbout']);
+Route::get('/edit-home', [HomeController::class, 'editHome'])->name('edit-home');
+Route::post('/edit-home', [HomeController::class, 'updateHome'])->name('update-home');
+
+
+Route::get('/edit-about', [AboutController::class, 'editAbout'])->name('edit-about');
+Route::post('/edit-about', [AboutController::class, 'updateAbout'])->name('update-about');
 
 
 Route::get('/add-teacher', [TeacherController::class, 'addTeacher']);
