@@ -11,6 +11,17 @@
         <div class="teacher_container layout_padding2">
             <div class="card-deck">
                 <div class="card">
+                    <div class="card-body">
+                        @foreach($teachers as $teacher)
+                        <h2 class="card-title">{{ $teacher->name }}</h2>
+                        <p class="card-title">Email: {{ $teacher->email }}</p>
+                        <p class="card-title">Mobile Number: {{ $teacher->mobile_number }}</p>
+                        <p class="card-title">Class: {{ $teacher->class_id }}</p>
+                        <br>
+                        @endforeach
+                    </div>
+                </div>
+                {{-- <div class="card">
                     <img class="card-img-top" src="{{ URL::to('images/teacher-1.jpg') }}" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Den Mark</h5>
@@ -33,7 +44,7 @@
                     <div class="card-body">
                         <h5 class="card-title">jonson mark</h5>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

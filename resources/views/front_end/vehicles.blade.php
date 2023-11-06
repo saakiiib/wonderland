@@ -18,16 +18,25 @@
                             <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="container card-deck">
+                        @foreach ($vehicles as $vehicle)
+                        <div class="card-body">
+                            <h3 class="card-title">{{ $vehicle->vehicle_type }}</h3>
+                            <p class="card-text">{{ $vehicle->vehicle_number }}</p>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    {{-- <div class="carousel-item">
                         <div class="vehicle_img-box">
                             <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
                         </div>
-                    </div>
-                    <div class="carousel-item">
+                    </div> --}}
+                    {{-- <div class="carousel-item">
                         <div class="vehicle_img-box">
                             <img src="{{ URL::to('images/bus.png') }}" alt="" class="img-fluid w-100">
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

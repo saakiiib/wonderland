@@ -3,12 +3,10 @@
 <section class="about_section layout_padding">
     <div class="container">
         <h2 class="main-heading ">
-            About School
+            {{ $aboutData->title }}
         </h2>
         <p class="text-center">
-            There are many variations of passages of Lorem Ipsum available, but the majority hThere are many variations
-            of
-            passages of Lorem Ipsum available, but the majority h
+            {{ $aboutData->description }}
         </p>
         <div class="about_img-box ">
             <img src="images/kids.jpg" alt="" class="img-fluid w-100">

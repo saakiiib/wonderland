@@ -21,17 +21,20 @@ class FrontEndController extends Controller
 
     public function about()
     {
-        return view('front_end.about');
+        $aboutData = DB::table('about_data')->where('id', 1)->first();
+        return view('front_end.about', compact('aboutData'));
     }
 
     public function teachers()
     {
-        return view('front_end.teachers');
+        $teachers = DB::table('teachers')->get();
+        return view('front_end.teachers', compact('teachers'));
     }
 
     public function vehicles()
     {
-        return view('front_end.vehicles');
+        $vehicles = DB::table('vehicles')->get();
+        return view('front_end.vehicles', compact('vehicles'));
     }
 
     public function contactUs()
@@ -41,6 +44,7 @@ class FrontEndController extends Controller
 
     public function studentsFeedback()
     {
-        return view('front_end.students_feedback');
+        $feedbacks = DB::table('student_feedbacks')->get();
+        return view('front_end.students_feedback', compact('feedbacks'));
     }
 }
