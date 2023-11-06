@@ -13,15 +13,6 @@
         <div class="about_img-box ">
             <img src="images/kids.jpg" alt="" class="img-fluid w-100">
         </div>
-        {{-- <div class="d-flex justify-content-center mt-5">
-            <a href="" class="call_to-btn  ">
-
-                <span>
-                    Read More
-                </span>
-                <img src="images/right-arrow.png" alt="">
-            </a>
-        </div> --}}
     </div>
 </section>
 @endsection

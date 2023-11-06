@@ -1,7 +1,5 @@
 @extends('admin.dashboard')
-
 @section('admin_content')
-
 <div class="row" id="basic-table">
     <div class="col-12">
         <div class="card">
@@ -56,5 +54,4 @@
         </div>
     </div>
 </div>
-
 @endsection

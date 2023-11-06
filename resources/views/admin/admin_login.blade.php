@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="loading dark-layout" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+
 <!-- BEGIN: Head-->
 
 <head>
@@ -18,10 +19,13 @@
         rel="stylesheet" />
 
     <!-- BEGIN: Vendor CSS-->
+
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/vendors/css/vendors.min.css" />
+
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
+
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/bootstrap-extended.css" />
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/colors.css" />
@@ -31,22 +35,30 @@
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/themes/semi-dark-layout.css" />
 
     <!-- BEGIN: Page CSS-->
+
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/core/menu/menu-types/vertical-menu.css" />
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/plugins/forms/form-validation.css" />
     <link rel="stylesheet" type="text/css" href="admin_assets/app-assets/css/pages/authentication.css" />
+
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
+
     <link rel="stylesheet" type="text/css" href="admin_assets/assets/css/style.css" />
+
     <!-- END: Custom CSS-->
+
 </head>
+
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static" data-open="click"
     data-menu="vertical-menu-modern" data-col="blank-page">
+
     <!-- BEGIN: Content-->
+
     <div class="app-content content">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
@@ -55,7 +67,10 @@
             <div class="content-body">
                 <div class="auth-wrapper auth-cover">
                     <div class="auth-inner row m-0">
-                        <!-- Brand logo--><a class="brand-logo" href="/">
+
+                        <!-- Brand logo-->
+
+                        <a class="brand-logo" href="/">
                             <svg viewBox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" height="28">
                                 <defs>
@@ -94,16 +109,22 @@
                             </svg>
                             <h2 class="brand-text text-primary ms-1">Admin </h2>
                         </a>
+
                         <!-- /Brand logo-->
+
                         <!-- Left Text-->
+
                         <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
                             <div class="w-100 d-lg-flex align-items-center justify-content-center px-5">
                                 <img class="img-fluid" src="admin_assets/app-assets/images/pages/register-v2-dark.svg"
                                     alt="Register V2" />
                             </div>
                         </div>
+
                         <!-- /Left Text-->
+
                         <!-- Register-->
+
                         <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
                             <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
                                 <h2 class="card-title fw-bold mb-1">
@@ -161,29 +182,40 @@
                                 </p>
                             </div>
                         </div>
+
                         <!-- /Register-->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- END: Content-->
 
     <!-- BEGIN: Vendor JS-->
+
     <script src="admin_assets/app-assets/vendors/js/vendors.min.js"></script>
+
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+
     <script src="admin_assets/app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
+
     <script src="admin_assets/app-assets/js/core/app-menu.js"></script>
     <script src="admin_assets/app-assets/js/core/app.js"></script>
+
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+
     <script src="admin_assets/app-assets/js/scripts/pages/auth-register.js"></script>
+
     <!-- END: Page JS-->
 
     <script>
@@ -197,6 +229,7 @@
       });
     </script>
 </body>
+
 <!-- END: Body-->
 
 </html>

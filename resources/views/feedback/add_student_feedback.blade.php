@@ -1,5 +1,4 @@
 @extends('admin.dashboard')
-
 @section('admin_content')
 <section class="bs-validation">
     <div class="card-header">

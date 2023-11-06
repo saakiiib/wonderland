@@ -1,5 +1,4 @@
 @extends('admin.dashboard')
-
 @section('admin_content')
 <div class="card-header">
     <h4 class="card-title">Edit Home</h4>
