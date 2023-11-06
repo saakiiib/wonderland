@@ -116,8 +116,8 @@
 
     <section class="container-fluid footer_section">
         <p>
-            Copyright &copy; 2023 All Rights Reserved By
-            <a href="{{ URL::to('#') }}">Sakib</a>
+            Copyright &copy; All Rights Reserved By
+            <a href="{{ URL::to('https://github.com/saakiiib') }}" target="blank">Sakib</a>
         </p>
     </section>
 

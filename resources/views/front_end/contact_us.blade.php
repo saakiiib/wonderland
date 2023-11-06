@@ -1,11 +1,11 @@
 @extends('front_end.master')
 @section('content')
-<section class="contact_section layout_padding-bottom">
+<section class="contact_section layout_padding">
     <div class="container">
-        <h2 class="main-heading">
+        <h2 class="main-heading ">
             Contact Us
         </h2>
-        <p class="text-center">
+        <p class="text-center layout_padding">
             You can contact us for any questions, suggestions or services😊
         </p>
         <div class="contact_section-container">

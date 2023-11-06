@@ -5,9 +5,11 @@
         <h2 class="main-heading ">
             {{ $aboutData->title }}
         </h2>
-        <p class="text-center">
-            {{ $aboutData->description }}
-        </p>
+        <div class="layout_padding2">
+            <p class="text-center">
+                {{ $aboutData->description }}
+            </p>
+        </div>
         <div class="about_img-box ">
             <img src="images/kids.jpg" alt="" class="img-fluid w-100">
         </div>

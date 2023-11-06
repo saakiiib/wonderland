@@ -5,7 +5,7 @@
         <h2 class="main-heading">
             Our Students Feedback
         </h2>
-        <p class="text-center">
+        <p class="text-center layout_padding2">
             Your thoughts, our inspiration. Students' feedback helps us enhance the learning journey, making education
             more tailored
             to your needs. Share, shape, and excel with us.
