@@ -79,7 +79,7 @@
                                 </li>
 
                                 <li class="nav-item ">
-                                    <a class="nav-link" href="{{ URL::to('/teachers') }}"> Teacher </a>
+                                    <a class="nav-link" href="{{ URL::to('/teachers') }}"> Teachers </a>
                                 </li>
 
                                 <li class="nav-item">
