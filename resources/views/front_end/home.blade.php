@@ -33,14 +33,6 @@
         <div class="about_img-box">
             <img src="{{ URL::to('images/kids.jpg') }}" alt="" class="img-fluid w-100">
         </div>
-        {{-- <div class="d-flex justify-content-center mt-5">
-            <a href="{{ URL::to('about.html') }}" class="call_to-btn">
-                <span>
-                    Read More
-                </span>
-                <img src="{{ URL::to('images/right-arrow.png') }}" alt="">
-            </a>
-        </div> --}}
     </div>
 </section>
 
@@ -66,40 +58,8 @@
                         @endforeach
                     </div>
                 </div>
-                {{-- <div class="card">
-                    <img class="card-img-top" src="{{ URL::to('images/teacher-1.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Den Mark</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="{{ URL::to('images/teacher-2.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Leena jorj</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="{{ URL::to('images/teacher-3.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Magi Den</h5>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="{{ URL::to('images/teacher-4.jpg') }}" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">jonson mark</h5>
-                    </div>
-                </div> --}}
             </div>
         </div>
-        {{-- <div class="d-flex justify-content-center mt-3">
-            <a href="{{ URL::to('your-see-more-page.html') }}" class="call_to-btn">
-                <span>
-                    See More
-                </span>
-                <img src="{{ URL::to('images/right-arrow.png') }}" alt="">
-            </a>
-        </div> --}}
     </div>
 </section>
 
