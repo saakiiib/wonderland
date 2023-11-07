@@ -102,8 +102,8 @@
                                 alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a
-                            class="dropdown-item" href="{{ URL::to('admin-profile') }}"><i class="me-50"
-                                data-feather="user"></i> Profile</a>
+                            class="dropdown-item" href="{{ URL::to('#') }}"><i class="me-50" data-feather="user"></i>
+                            Profile</a>
                         <div class="dropdown-divider"></div><a class="dropdown-item"
                             href="{{ URL::to('/admin-logout') }}"><i class="me-50" data-feather="power"></i> Logout</a>
                     </div>
@@ -283,8 +283,8 @@
 <!-- BEGIN: Footer-->
 
 <footer class="footer footer-static footer-light">
-    <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2023<a
-                class="ms-25" href="{{ URL::to('/') }}" target="_blank">Sakib</a><span
+    <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy;<a
+                class="ms-25" href="{{ URL::to('https://github.com/saakiiib') }}" target="_blank">Sakib</a><span
                 class="d-none d-sm-inline-block">, All rights Reserved</span></p>
 </footer>
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
