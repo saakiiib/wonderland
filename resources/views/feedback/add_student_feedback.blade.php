@@ -22,8 +22,7 @@
                     </div>
                     <div class="mb-1">
                         <label class="d-block form-label" for="validationBioBootstrap">Feedback Description</label>
-                        <textarea class="form-control" id="validationBioBootstrap" name="feedback_description" rows="3"
-                            required></textarea>
+                        <textarea class="form-control" id="id" name="feedback_description" rows="3" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
