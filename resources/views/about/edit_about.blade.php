@@ -14,8 +14,8 @@
         </div>
         <div class="mb-1">
             <label class="d-block form-label" for="validationBioBootstrap">New Description</label>
-            <textarea class="form-control" id="validationBioBootstrap" name="description" placeholder="Description"
-                rows="3" required></textarea>
+            <textarea class="form-control" id="id" name="description" placeholder="Description" rows="3"
+                required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
