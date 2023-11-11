@@ -17,24 +17,35 @@
                     <div class="mb-1">
                         <label class="form-label" for="basic-addon-name">Name</label>
                         <input type="text" id="basic-addon-name" name="name" class="form-control" placeholder="Teacher"
-                            aria-label="Name" aria-describedby="basic-addon-name" required />
+                            aria-label="Name" aria-describedby="basic-addon-name" required value="{{ old('name') }}" />
+
                         <div class="valid-feedback">Looks good!</div>
+                        @if ($errors->has('name'))
+                        <span class="text-danger">{{ $errors->first('name') }}</span>
+                        @endif
                     </div>
                     <div class="mb-1">
                         <label class="form-label" for="basic-default-email1">Email</label>
                         <input type="email" id="basic-default-email1" name="email" class="form-control"
-                            placeholder="teacher@example.com" aria-label="teacher@example.com" required />
+                            placeholder="teacher@example.com" aria-label="teacher@example.com" required
+                            value="{{ old('email') }}" />
                         <div class="valid-feedback">Looks good!</div>
+                        @if ($errors->has('email'))
+                        <span class="text-danger">{{ $errors->first('email') }}</span>
+                        @endif
                     </div>
                     <div class="mb-1">
                         <label class="form-label" for="basic-default-email1">Mobile Number</label>
                         <input type="number" id="contact-info" name="mobile_number" class="form-control"
-                            placeholder="01xxxxxxxxx" required />
+                            placeholder="01xxxxxxxxx" required value="{{ old('mobile_number') }}" />
                         <div class="valid-feedback">Looks good!</div>
+                        @if ($errors->has('mobile_number'))
+                        <span class="text-danger">{{ $errors->first('mobile_number') }}</span>
+                        @endif
                     </div>
                     <div class="mb-1">
                         <label class="form-label">Class</label>
-                        <select class="form-select" name="class_id" required>
+                        <select class="form-select" name="class_id" required value="{{ old('class_id') }}">
                             <option value="" disabled selected>Select class</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -42,6 +53,9 @@
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
+                        @if ($errors->has('class_id'))
+                        <span class="text-danger">{{ $errors->first('class_id') }}</span>
+                        @endif
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
