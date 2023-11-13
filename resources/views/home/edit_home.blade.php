@@ -1,10 +1,12 @@
 @extends('admin.dashboard')
+
 @section('admin_content')
 <div class="card-header">
     <h4 class="card-title">Edit Home</h4>
 </div>
 <div class="card-body">
-    <form class="needs-validation" method="post" action="{{ route('update-home') }}" novalidate>
+    <form class="needs-validation" method="post" action="{{ route('update-home') }}" enctype="multipart/form-data"
+        novalidate>
         @csrf
         <div class="mb-1">
             <label class="form-label" for="basic-addon-name">New Title</label>
@@ -16,6 +18,10 @@
             <label class="d-block form-label" for="validationBioBootstrap">New Description</label>
             <textarea class="form-control" id="id" name="description" placeholder="Description" rows="3"
                 required></textarea>
+        </div>
+        <div class="mb-1">
+            <label for="formFile" class="form-label">Image</label>
+            <input class="form-control" type="file" id="image" name="image" accept="image/*" required />
         </div>
         <button type="submit" class="btn btn-primary">Update</button>
     </form>
