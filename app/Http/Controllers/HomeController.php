@@ -27,17 +27,13 @@ class HomeController extends Controller
             'description' => $request->input('description'),
         ];
 
-        //home
-        // $filename = time() . '.' . $request->image->extension();
-        // $request->image->move(public_path('home'), $filename);
-        //home
-
-        //storage 
         if ($request->hasFile('image') && $request->file('image')->isValid()) {
             $filename = time() . '.' . $request->image->extension();
+
             $request->image->storeAs('public/home', $filename);
+
+            $data['image'] = $filename;
         }
-        //storage
 
         DB::table('home_data')->updateOrInsert(['id' => 1], $data);
 

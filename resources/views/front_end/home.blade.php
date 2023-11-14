@@ -20,9 +20,7 @@
                 </div>
             </div>
             <div class="hero_img-container">
-                <div>
-                    <img src="{{ URL::to('images/hero.png') }}" alt="" class="img-fluid">
-                </div>
+                <img src="{{ asset('storage/home/' . $homeData->image) }}" alt="Image" class="img-fluid">
             </div>
         </div>
     </div>
