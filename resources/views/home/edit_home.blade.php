@@ -11,13 +11,19 @@
         <div class="mb-1">
             <label class="form-label" for="basic-addon-name">New Title</label>
             <input type="text" id="basic-addon-name" class="form-control" name="title" placeholder="Title"
-                aria-label="Name" aria-describedby="basic-addon-name" required />
+                aria-label="Name" aria-describedby="basic-addon-name" required value="{{ old('title') }}" />
             <div class="valid-feedback">Looks good!</div>
+            @if ($errors->has('title'))
+            <span class="text-danger">{{ $errors->first('title') }}</span>
+            @endif
         </div>
         <div class="mb-1">
             <label class="d-block form-label" for="validationBioBootstrap">New Description</label>
-            <textarea class="form-control" id="id" name="description" placeholder="Description" rows="3"
-                required></textarea>
+            <textarea class="form-control" id="id" name="description" placeholder="Description" rows="3" required
+                value="{{ old('description') }}"> </textarea>
+            @if ($errors->has('description'))
+            <span class="text-danger">{{ $errors->first('description') }}</span>
+            @endif
         </div>
         <div class="mb-1">
             <label for="formFile" class="form-label">Image</label>
