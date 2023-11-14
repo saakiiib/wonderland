@@ -13,8 +13,7 @@ use App\Http\Controllers\StudentFeedbackController;
 
 
 Route::get('/', [FrontEndController::class, 'root']);
-Route::get('/home', [FrontEndController::class, 'root']);
-Route::post('/home', [DashboardController::class, 'storeContactData'])->name('store-contact-data');
+Route::post('/', [DashboardController::class, 'storeContactData'])->name('store-contact-data');
 
 
 Route::get('/about', [FrontEndController::class, 'about']);
