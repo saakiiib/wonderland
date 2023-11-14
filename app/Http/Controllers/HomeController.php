@@ -19,7 +19,7 @@ class HomeController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         $data = [
@@ -33,8 +33,10 @@ class HomeController extends Controller
         //home
 
         //storage 
-        $filename = time() . '.' . $request->image->extension();
-        $request->image->storeAs('public/home', $filename);
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            $filename = time() . '.' . $request->image->extension();
+            $request->image->storeAs('public/home', $filename);
+        }
         //storage
 
         DB::table('home_data')->updateOrInsert(['id' => 1], $data);
