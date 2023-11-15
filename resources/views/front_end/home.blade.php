@@ -29,10 +29,13 @@
             {{ $aboutData->title }}
         </h2>
         <p class="text-center layout_padding2">
-            {{ $aboutData->description }}
+            {{-- {{ $aboutData->description }} --}}
+            <?php
+                echo $aboutData->description;
+            ?>
         </p>
         <div class="about_img-box">
-            <img src="{{ URL::to('images/kids.jpg') }}" alt="" class="img-fluid w-100">
+            <img src="{{ asset('storage/about/' . $aboutData->image) }}" alt="image" class="img-fluid w-100">
         </div>
     </div>
 </section>

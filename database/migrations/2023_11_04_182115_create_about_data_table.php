@@ -13,6 +13,7 @@ class CreateAboutDataTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->timestamps();
+            $table->string('image')->nullable();
         });
     }
 
