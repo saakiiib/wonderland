@@ -185,7 +185,7 @@
             <li class=" nav-item"><a class="d-flex align-items-center"><span
                         class="menu-title text-truncate">Home</span></a>
                 <ul class="menu-content">
-                    <li><a class="d-flex align-items-center" target="blank" href="{{ URL::to('/home') }}"><i></i><span
+                    <li><a class="d-flex align-items-center" target="blank" href="{{ URL::to('/') }}"><i></i><span
                                 class="menu-item text-truncate" data-i18n="List">View Home Page</span></a>
                     </li>
                     <li><a class="d-flex align-items-center" href="{{ URL::to('/edit-home') }}"><i></i><span
