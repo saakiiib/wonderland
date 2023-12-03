@@ -7,10 +7,7 @@
         </h2>
         <div class="layout_padding2">
             <p class="text-center">
-                {{-- {{ $aboutData->description }} --}}
-                <?php
-                    echo $aboutData->description;
-                ?>
+                {!! $aboutData->description !!}
             </p>
         </div>
         <div class="about_img-box ">

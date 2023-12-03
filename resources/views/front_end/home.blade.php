@@ -11,10 +11,7 @@
                     Wonderland
                 </h1>
                 <p>
-                    {{-- {{ $homeData->description }} --}}
-                    <?php
-                    echo $homeData->description;
-                    ?>
+                    {!! $homeData->description !!}
                 </p>
                 <div class="hero_btn-continer">
                 </div>
